@@ -1,7 +1,7 @@
 #![no_std]
 #![no_main]
 
-use os::{exit_qemu, println, serial_print, QemuExitCode};
+use os::{println, serial_print};
 use core::panic::PanicInfo;
 
 #[no_mangle]
