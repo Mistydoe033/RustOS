@@ -62,3 +62,15 @@ Instead of blocking, threads repeatedly attempt to lock the spinlock in a tight 
 Only a single unsafe block is present in the code, required to create a `Buffer` reference pointing to `0xb8000`.
 All subsequent operations are safe due to Rust's bounds checking for array accesses, preventing accidental writes outside the buffer.
 The type system encodes the necessary conditions, ensuring a safe interface to the outside.
+
+# build code 
+
+`cargo build`
+
+# build boot image 
+
+`cargo bootimage`
+
+# Run Kernal for target spesified in config.toml
+
+`qemu-system-x86_64 -drive format=raw,file=target/x86_64-os/debug/bootimage-os.bin`
