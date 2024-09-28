@@ -1,5 +1,7 @@
 # Freestanding Rust Binary
 
+Project Continued privately [link text](https://github.com/orgs/RavenTechSolutions)
+
 ## Overview
 This project features a Rust executable that does not link to the standard library, enabling the execution of Rust code on bare metal without an underlying operating system.
 
